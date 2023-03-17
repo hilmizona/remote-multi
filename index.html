@@ -17,3 +17,22 @@ Step 1 :
 > Git remote / Git remote -v
     - Check remot terhubung apa blm
     - remote dilocal
+
+#
+Kasus 1 : 
+repo asli mengedit/menambah file dan repo Fork/hill harus mendapat update 
+begitu pun Clone Fork dilocal harus dapat update repo asli 
+
+Step :
+> Git Fetch namremote(zona)
+    - ambil data dari remote zona untuk local
+> Git merge namremote(zona)/nambranch(master)
+    - merge data yg di dapat dari fetch repo aslo
+> Git status
+    -check
+> Git push -u namaremote(origin) nambranch(master)
+    - push ek Fork dari Fetch local agar Fork terupdate
+
+Result :
+di graph data repo asli, fork, dan clone harus sejajar 
+8f69ed3 (HEAD -> master, zona/master, origin/master, origin/HEAD)
