@@ -36,3 +36,23 @@ Step :
 Result :
 di graph data repo asli, fork, dan clone harus sejajar 
 8f69ed3 (HEAD -> master, zona/master, origin/master, origin/HEAD)
+
+#
+Kasus 2 :
+repo asli dan local mengedit file yang sama bersamaa
+yang artinya akan ada Conflict.
+kasus ini sama dengan Creat Pull Request tanpa Conflict.
+
+Step :
+> Git add . ➡ Git commit ➡ Git push 
+    - agar data local masuk ke Clone
+    - dan Fork Creat Pull Request ke Repo asli/zona
+> Buka repo asli dan Pull Request untk meresolve Conflict
+    - merge dan resolve di repo asli
+
+> Git fetch repoasli(zona)
+    - kalau ada perubahan resolve Merge lagi dan push lagi ke Fork
+
+Result :
+di graph data repo asli, fork, dan clone harus sejajar. 
+96d5ae0 (HEAD -> master, zona/master, origin/master, origin/HEAD) Merge pull request #2 from hilmizona/revert-1-master
